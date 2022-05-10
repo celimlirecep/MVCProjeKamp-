@@ -1,0 +1,26 @@
+﻿@using EntityLayer
+@model List<Category>
+
+
+
+<a class="btn btn-warning" asp-action="Create" asp-controller="Category">yeni Kategori Oluştur</a>
+
+<table class="table table-bordered">
+    <thead class="thead-light">
+    <td>ID</td>
+    <td>Adı</td>
+    <td>Açıklama</td>
+    <td>Durum</td>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.CategoryId</td>
+            <td>@item.CategoryName</td>
+            <td>@item.CategoryDescription</td>
+            <td>@item.CategoryStatus</td>
+        </tr>
+        }
+    </tbody>
+    </table>
