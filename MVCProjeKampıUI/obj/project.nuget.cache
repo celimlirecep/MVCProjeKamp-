@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MdD/c06vxF8PoW8+rGTCY+rS/r+GNZCBTQ+nYtQDuDdyfAP/0JdCiqG9fDgBEsPTtvQDpZ9g9Bk8dxnZcn5/Tw==",
+  "dgSpecHash": "B+LnC5AI/tCwyGXtGNRiZR/ZvDBffkrZf8/nl7TcZAxFdaWb6AoautcgPJTl1XromIHTWsebjHPJnO5ur2jBcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\MVCProjeKampıUI\\MVCProjeKampıUI.csproj",
+  "projectFilePath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\MVCProjeKampıUI\\MVCProjeKampıUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\recep\\.nuget\\packages\\fluentvalidation\\11.0.1\\fluentvalidation.11.0.1.nupkg.sha512",
     "C:\\Users\\recep\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

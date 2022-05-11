@@ -1,22 +1,29 @@
 ﻿@using EntityLayer
 @model Category
 
+@{
+    ViewData["Title"] = "AddCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
 <h1>Category Add</h1>
 
 
-<form asp-action="Create" class="form-group">
+<form asp-action="AddCategory" class="form-group">
     <label class="col-form-label-sm"> Categori Adı Giriniz:</label>
-    <input type="text" class="form-control" name="CategoryName" />
+    <input type="text" class="form-text" asp-for="CategoryName" />
     <span asp-validation-for="CategoryName" class="text-danger"></span>
     <br />
     <label class="col-form-label-sm"> Categori Açıklaması Giriniz:</label>
-    <input type="text" class="form-control" name="CategoryDescription" />
+    <input type="text" class="form-text" asp-for="CategoryDescription" />
     <span asp-validation-for="CategoryDescription"></span>
     <br />
     <label class="col-form-label-sm"> Categori Durumu:</label> <br />
-    <input type="text" class="form-control" name="CategoryStatus" />
+    <input type="checkbox" class="form-check" asp-for="CategoryStatus" />
     <br />
 
 
     <button class="btn btn-info" type="submit"> Kaydet</button>
 </form>
+

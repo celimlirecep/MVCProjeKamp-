@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj": {}
+    "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\recep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\recep\\AppData\\Roaming\\NuGet\\NuGet.Config",

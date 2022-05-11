@@ -1,4 +1,4 @@
-﻿
+﻿@model List<EntityLayer.Category>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -6,14 +6,33 @@
 
 
 
-<table class="table table-bordered m-5">
-    <thead>
-        <td>ID</td>
-        <td>Kategori Adı</td>
-        <td>Kategori Açıklama</td>
-        <td>Kategori Durumu</td>
-    </thead>
+<table class="table table-bordered mt-1">
+    <tr>
+        <th>#</th>
+        <th>Kategori Adı</th>
+        <th>Kategori Açıklama</th>
+        <th>Kategori Durumu</th>
+        <th>Kategori İşlemleri</th>
+
+    </tr>
     <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.CategoryId</th>
+                <td>@item.CategoryName</td>
+                <td>@item.CategoryDescription</td>
+                <td>@(item.CategoryStatus==true?"Aktif":"Pasif")</td>
+                <td>
+                    <a asp-action="DeleteCategory" class="btn btn-sm btn-danger" asp-route-id="@item.CategoryId">Sil</a>
+                    <a href="#" class="btn btn-sm btn-warning">Güncelle</a>
+                    <a href="#" class="btn btn-sm btn-primary">Başlıklar</a>
+                </td>
+
+
+
+            </tr>
+        }
 
     </tbody>
 </table>

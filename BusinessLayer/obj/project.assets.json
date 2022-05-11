@@ -1183,11 +1183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\recep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\recep\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1204,11 +1204,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }
