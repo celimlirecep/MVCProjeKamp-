@@ -1,0 +1,27 @@
+﻿@model EntityLayer.Category
+@{
+    ViewData["Title"] = "EditCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>EditCategory</h1>
+
+<form asp-action="EditCategory" class="form-group">
+    <input type="hidden" asp-for="CategoryId"  value="" />
+
+    <label class="col-form-label-sm"> Categori Adı Giriniz:</label>
+    <input type="text" class="form-text" asp-for="CategoryName" value="@Model.CategoryName"/>
+    <span asp-validation-for="CategoryName" class="text-danger"></span>
+    <br />
+    <label class="col-form-label-sm"> Categori Açıklaması Giriniz:</label>
+    <input type="text" class="form-text" asp-for="CategoryDescription" value="@Model.CategoryDescription" />
+    <span asp-validation-for="CategoryDescription"></span>
+    <br />
+    <label class="col-form-label-sm"> Categori Durumu:</label> <br />
+    <input type="checkbox" class="form-check @(Model.CategoryStatus==true?"active":"") " asp-for="CategoryStatus" />
+    <br />
+
+
+    <button class="btn btn-info" type="submit"> Kaydet</button>
+</form>
+

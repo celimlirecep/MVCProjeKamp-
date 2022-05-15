@@ -455,3 +455,10 @@ C:\Users\recep\OneDrive\Masaüstü\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net
 C:\Users\recep\OneDrive\Masaüstü\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\ref\MVCProjeKampıUI.dll
 C:\Users\recep\OneDrive\Masaüstü\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\MVCProjeKampıUI.pdb
 C:\Users\recep\OneDrive\Masaüstü\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\MVCProjeKampıUI.genruntimeconfig.cache
+C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\AdminCategory\EditCategory.cshtml.g.cs
+C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Writer\Index.cshtml.g.cs
+C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Writer\AddWriter.cshtml.g.cs
+C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Writer\EditWritter.cshtml.g.cs
+C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Heading\Index.cshtml.g.cs
+C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Heading\AddHeading.cshtml.g.cs
+C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Heading\ContentByHeading.cshtml.g.cs

@@ -68,12 +68,18 @@ to get the desired effect
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
+                                    <a asp-controller="AdminCategory" asp-action="Index" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Categorileri Listele</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a asp-controller="AdminCategory" asp-action="AddCategory" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Yeni Kayıt Ekle</p>
                                     </a>
                                 </li>
-                             
+
                             </ul>
 
                         </li>
@@ -85,15 +91,47 @@ to get the desired effect
 
                                 </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a asp-controller="Heading" asp-action="Index" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Başlıkları Listele</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="Heading" asp-action="AddHeading" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Başlık Ekle</p>
+                                    </a>
+                                </li>
+
+                            </ul>
                         </li>
                         <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
+
+                            <a asp-controller="Writer" asp-action="Index" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
                                     Yazarlar
-
+                                    <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a asp-controller="Writer" asp-action="Index" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Yazarları Listele</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="Writer" asp-action="AddWriter" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Yeni Yazar Ekle</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                         
 
                         </li>
                         <li class="nav-item has-treeview">

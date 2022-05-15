@@ -959,11 +959,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\recep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\DataAccessLayer\\obj\\",
+      "outputPath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\recep\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -980,8 +980,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }

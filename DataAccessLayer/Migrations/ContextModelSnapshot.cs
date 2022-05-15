@@ -142,19 +142,32 @@ namespace DataAccessLayer.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("WriterAbout")
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("WriterImage")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("WriterMail")
+                        .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("WriterName")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("WriterPassword")
+                        .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("WriterStatus")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("WriterSurname")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("WritterJob")
+                        .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
                     b.HasKey("WriterId");

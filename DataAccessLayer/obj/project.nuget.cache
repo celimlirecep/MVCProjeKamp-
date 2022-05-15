@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UDtOJtHMCONAjuXFmE5K0htLyHT5W0LRlK2bI/23YhYcD8BWdCO2OQkzs2hE3PvmgoCZ+ONjHupqJqpsnzlOAg==",
+  "dgSpecHash": "q4RUlTiehUD/xim/JMfU11aKKY0aAhAp6zdduST6fYDzwHWWeJIg02uz1159/UmZaM0ZBnTdnoyTy+Qc/4JROA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\recep\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.16\\microsoft.data.sqlite.core.5.0.16.nupkg.sha512",
     "C:\\Users\\recep\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

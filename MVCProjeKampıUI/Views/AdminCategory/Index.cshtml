@@ -25,8 +25,8 @@
                 <td>@(item.CategoryStatus==true?"Aktif":"Pasif")</td>
                 <td>
                     <a asp-action="DeleteCategory" class="btn btn-sm btn-danger" asp-route-id="@item.CategoryId">Sil</a>
-                    <a href="#" class="btn btn-sm btn-warning">Güncelle</a>
-                    <a href="#" class="btn btn-sm btn-primary">Başlıklar</a>
+                    <a class="btn btn-sm btn-warning" asp-route-id="@item.CategoryId" asp-action="EditCategory">Güncelle</a>
+                    <a  class="btn btn-sm btn-primary" asp-route-id="@item.CategoryId">Başlıklar</a>
                 </td>
 
 

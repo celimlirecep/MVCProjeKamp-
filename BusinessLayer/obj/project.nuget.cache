@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+Xvhy/tGqyk4Dg67PGg1siv5CrhpTVO5+Acic1ZOib7ikWRVezz4U06I4q2y/s8q0KWwq7rJ7va+0+4zwd6xqw==",
+  "dgSpecHash": "Et9tXJ3gDDkQdlY7BLyOkSEaaSSKeixmYIvAxirQ89qWhgfwBhZAn2QlYQEDYoFASlDueH0RUFTPsatCImdwNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\recep\\OneDrive\\Masaüstü\\MVCProjeKampı\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\recep\\Downloads\\MVCProjeKampı\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\recep\\.nuget\\packages\\fluentvalidation\\11.0.1\\fluentvalidation.11.0.1.nupkg.sha512",
     "C:\\Users\\recep\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

@@ -9,5 +9,7 @@ namespace DataAccessLayer.Abstract
 {
     public interface IHeadingDAL : IRepository<Heading>
     {
+
+        List<Heading> GetHeadingCombineWriterAndCategory();
     }
 }

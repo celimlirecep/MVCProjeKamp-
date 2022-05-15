@@ -1,0 +1,30 @@
+﻿
+@model EntityLayer.Heading
+
+@{
+    ViewData["Title"] = "AddCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form asp-action="AddHeading" class="form-group">
+    <label class="col-form-label-sm"> Başlık Adı:</label>
+    <input type="text" class="form-text" asp-for="HeadingName" />
+    <span asp-validation-for="HeadingName" class="text-danger"></span>
+    <br />
+
+
+    <label class="col-form-label-sm"> Yazar Adı:</label>
+    <input type="text" class="form-text" asp-for="WriterId" />
+    <span asp-validation-for="WriterId"></span>
+    <br />
+    <label>Kategori Adı </label><br />
+    <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.Category"></select>
+    <br />
+    <label>Yazar Adı </label><br />
+    <select asp-for="WriterId" class="form-select" asp-items="ViewBag.Writer"></select>
+    <br />
+
+
+
+    <button class="btn btn-info" type="submit"> Başlık Oluştur</button>
+</form>

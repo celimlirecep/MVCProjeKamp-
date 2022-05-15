@@ -1,0 +1,41 @@
+﻿@model Writer
+@{
+    ViewData["Title"] = "EditWritter";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>EditWritter</h1>
+
+
+<form asp-action="EditWritter" class="form-group">
+    <input type="hidden" class="form-text" asp-for="WriterId" />
+    <label class="col-form-label-sm"> Yazar Adı Giriniz:</label>
+    <input type="text" class="form-text" asp-for="WriterName" />
+    <span asp-validation-for="WriterName" class="text-danger"></span>
+    <br />
+    <label class="col-form-label-sm"> Yazar Soyadı Giriniz:</label>
+    <input type="text" class="form-text" asp-for="WriterSurname" />
+    <span asp-validation-for="WriterSurname"></span>
+    <br />
+    <label class="col-form-label-sm"> Yazar Ünvan Giriniz:</label>
+    <input type="text" class="form-text" asp-for="WriterAbout" />
+    <span asp-validation-for="WriterAbout"></span>
+    <br />
+    <label class="col-form-label-sm"> Yazar resmi Giriniz:</label>
+    <input type="text" class="form-text" asp-for="WriterImage" />
+    <span asp-validation-for="WriterImage"></span>
+    <br />
+    <label class="col-form-label-sm"> Yazar mail Giriniz:</label>
+    <input type="text" class="form-text" asp-for="WriterMail" />
+    <span asp-validation-for="WriterMail"></span>
+    <br />
+    <label class="col-form-label-sm"> Yazar Şifre Durumu:</label> <br />
+    <input type="text" class="form-text" asp-for="WriterPassword" />
+    <span asp-validation-for="WriterPassword"></span>
+    <br />
+
+
+    <button class="btn btn-info" type="submit"> Değişiklikleri Kaydet</button>
+</form>
+
+

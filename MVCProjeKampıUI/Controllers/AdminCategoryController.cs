@@ -52,5 +52,19 @@ namespace MVCProjeKampıUI.Controllers
             return RedirectToAction("Index");
         
         }
+        public IActionResult EditCategory(int id)
+        {
+            var categoryValue = cm.GetById(id);
+
+            return View(categoryValue);
+        }
+        [HttpPost]
+        public IActionResult EditCategory(Category category)
+        {
+            cm.CategoryUpdate(category);
+
+
+            return RedirectToAction("Index");
+        }
     }
 }
