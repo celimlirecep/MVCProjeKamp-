@@ -11,10 +11,9 @@ namespace EntityLayer
         public int ContentId { get; set; }
         public string ContentValue { get; set; }
         public DateTime ContentDate { get; set; }
-
+        public bool ContentStatus { get; set; }
         public int HeadingId { get; set; }
         public Heading Heading { get; set; }
-
         public int WriterID { get; set; }
         public Writer Writer { get; set; }
 

@@ -91,6 +91,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<DateTime>("ContentDate")
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("ContentStatus")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("ContentValue")
                         .HasColumnType("TEXT");
 
@@ -124,6 +127,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("HeadingName")
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("HeadingStatus")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("WriterId")
                         .HasColumnType("INTEGER");
 
@@ -134,6 +140,35 @@ namespace DataAccessLayer.Migrations
                     b.HasIndex("WriterId");
 
                     b.ToTable("Headings");
+                });
+
+            modelBuilder.Entity("EntityLayer.Message", b =>
+                {
+                    b.Property<int>("MessageId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("MessageContent")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("MessageDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RecieverMail")
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SenderMail")
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Subject")
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("MessageId");
+
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("EntityLayer.Writer", b =>

@@ -38,8 +38,6 @@ namespace MVCProjeKampıUI.Controllers
 
             return View();
         }
-
-
         [HttpPost]
         public IActionResult AddHeading(Heading heading)
         {
@@ -61,10 +59,10 @@ namespace MVCProjeKampıUI.Controllers
             return View(heading);
 
         }
-
         public IActionResult EditHeading(int id)
         {
-
+            ViewBag.Writer = new SelectList(wm.GetList(), "WriterId", "WriterFullName");
+            ViewBag.Category = new SelectList(cm.GetList(), "CategoryId", "CategoryName");
             return View(hm.GetById(id));
         }
         [HttpPost]
@@ -84,15 +82,18 @@ namespace MVCProjeKampıUI.Controllers
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
             }
-            return View();
+            ViewBag.Writer = new SelectList(wm.GetList(), "WriterId", "WriterFullName",heading.WriterId);
+            ViewBag.Category = new SelectList(cm.GetList(), "CategoryId", "CategoryName",heading.CategoryId);
+            return View(heading);
 
         }
-
-        public IActionResult ContentByHeading()
+        public IActionResult DeleteHeading(int id)
         {
 
-            return View();
+            hm.HeadingDelete(hm.GetById(id));
+            return RedirectToAction("Index");
         }
 
+       
     }
 }

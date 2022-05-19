@@ -61,9 +61,9 @@ namespace MVCProjeKampıUI.Controllers
         [HttpPost]
         public IActionResult EditCategory(Category category)
         {
+        
+            
             cm.CategoryUpdate(category);
-
-
             return RedirectToAction("Index");
         }
     }

@@ -13,11 +13,11 @@ namespace DataAccessLayer.Concrete.Repositories
     {
         Context c = new Context();
 
-        DbSet<T> _context;
+        DbSet<T> _object;
 
         public GenericRepository()
         {
-            _context = c.Set<T>();
+            _object = c.Set<T>();
         }
         public void Delete(T entity)
         {
@@ -27,7 +27,7 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public T Get(Expression<Func<T, bool>> filter)
         {
-            return _context.SingleOrDefault(filter);
+            return _object.SingleOrDefault(filter);
         }
 
         public void Insert(T entity)
@@ -38,12 +38,12 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public List<T> List()
         {
-            return _context.ToList();
+            return _object.ToList();
         }
 
         public List<T> List(Expression<Func<T, bool>> filter)
         {
-            return _context.Where(filter).ToList();
+            return _object.Where(filter).ToList();
         }
 
         public void Update(T entity)

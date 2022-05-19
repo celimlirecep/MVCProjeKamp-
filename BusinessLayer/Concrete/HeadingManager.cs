@@ -24,7 +24,8 @@ namespace BusinessLayer.Concrete
 
         public void HeadingDelete(Heading heading)
         {
-            _headingDal.Delete(heading);
+            heading.HeadingStatus = false;
+            _headingDal.Update(heading);
         }
 
         public void HeadingUpdate(Heading heading)
@@ -34,7 +35,7 @@ namespace BusinessLayer.Concrete
 
         public Heading GetById(int id)
         {
-            return _headingDal.Get(x => x.CategoryId == id);
+            return _headingDal.Get(x => x.HeadingId == id);
         }
 
         public List<Heading> GetList()

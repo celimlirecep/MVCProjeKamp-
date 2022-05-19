@@ -7,7 +7,7 @@
 <h1>EditCategory</h1>
 
 <form asp-action="EditCategory" class="form-group">
-    <input type="hidden" asp-for="CategoryId"  value="" />
+    <input type="text" asp-for="CategoryId"  value="@Model.CategoryId" />
 
     <label class="col-form-label-sm"> Categori Adı Giriniz:</label>
     <input type="text" class="form-text" asp-for="CategoryName" value="@Model.CategoryName"/>
