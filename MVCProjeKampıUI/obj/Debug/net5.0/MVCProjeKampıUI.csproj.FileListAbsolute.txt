@@ -169,3 +169,6 @@ C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\
 C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Message\Inbox.cshtml.g.cs
 C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Message\SendBox.cshtml.g.cs
 C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Message\NewMessage.cshtml.g.cs
+C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Message\GetInboxMessageDetails.cshtml.g.cs
+C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\Message\GetSendBoxMessageDetails.cshtml.g.cs
+C:\Users\recep\Downloads\MVCProjeKampı\MVCProjeKampıUI\obj\Debug\net5.0\Razor\Views\ErrorPage\400Errors.cshtml.g.cs

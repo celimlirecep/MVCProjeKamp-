@@ -13,6 +13,6 @@ namespace EntityLayer
         public string UserMail { get; set; }
         public string Subject { get; set; }
         public string Massage { get; set; }
-
+        public DateTime ContactDate { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿
+﻿@model Message
 @{
     ViewData["Title"] = "New Message";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -45,43 +45,52 @@
                 <partial name="_MessageListMenu"/>
                 <!-- /.col -->
                 <div class="col-md-9">
-                    <div class="card card-primary card-outline">
-                        <div class="card-header">
-                            <h3 class="card-title">Yeni Mesaj Oluştur</h3>
-                        </div>
-                        <!-- /.card-header -->
-                        <div class="card-body">
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Alıcı:">
+                    <form asp-action="NewMessage">
+                        <div class="card card-primary card-outline">
+                            <div class="card-header">
+                                <h3 class="card-title">Yeni Mesaj Oluştur</h3>
                             </div>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Konu:">
-                            </div>
-                            <div class="form-group">
-                                <textarea id="compose-textarea" class="form-control" style="height: 300px">
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="form-group">
+                               
+                                    <input type="text" class="form-control" asp-for="RecieverMail" placeholder="Alıcı:"/>
+                                    <span asp-validation-for="RecieverMail" class="text-danger"></span>
+                                
+                                   
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="Subject" placeholder="Konu:" />
+                                    <span asp-validation-for="Subject" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <p>Mesajınız: </p>
+                                    <textarea id="compose-textarea" asp-for="MessageContent" class="form-control" style="height: 300px">
                                 
                                     @* TEXT ALANI OLRAK KULLANILACAK *@
                                 </textarea>
-                            </div>
-                            <div class="form-group">
-                                <div class="btn btn-default btn-file">
-                                    <i class="fas fa-paperclip"></i> Dosya Ekle
-                                    <input type="file" name="attachment">
+                                    <span asp-validation-for="MessageContent" class="text-danger"></span>
                                 </div>
-                                <p class="help-block">Max. 32MB</p>
+                                <div class="form-group">
+                                    <div class="btn btn-default btn-file">
+                                        <i class="fas fa-paperclip"></i> Dosya Ekle
+                                        <input type="file" name="attachment">
+                                    </div>
+                                    <p class="help-block">Max. 32MB</p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- /.card-body -->
-                        <div class="card-footer">
-                            <div class="float-right">
-                                <button type="button" class="btn btn-default"><i class="fas fa-pencil-alt"></i> Taslaklara Kaydet</button>
-                                <button type="submit" class="btn btn-primary"><i class="far fa-envelope"></i> Gönder</button>
+                            <!-- /.card-body -->
+                            <div class="card-footer">
+                                <div class="float-right">
+                                    <button type="button" class="btn btn-default"><i class="fas fa-pencil-alt"></i> Taslaklara Kaydet</button>
+                                    <button type="submit" class="btn btn-primary"><i class="far fa-envelope"></i> Gönder</button>
+                                </div>
+                                <button type="reset" class="btn btn-default"><i class="fas fa-times"></i> İptal Et</button>
                             </div>
-                            <button type="reset" class="btn btn-default"><i class="fas fa-times"></i> İptal Et</button>
+                            <!-- /.card-footer -->
                         </div>
-                        <!-- /.card-footer -->
-                    </div>
-                    <!-- /.card -->
+                        <!-- /.card -->
+                    </form>
                 </div>
                 <!-- /.col -->
             </div>
