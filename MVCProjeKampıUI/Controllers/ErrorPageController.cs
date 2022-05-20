@@ -8,27 +8,13 @@ namespace MVCProjeKampıUI.Controllers
 {
     public class ErrorPageController : Controller
     {
+        public IActionResult Error1(int code)
+        {
 
-        //Sayfa Bulunamadı
-        public IActionResult Errors400_404()
-        {
-            Response.StatusCode = 404;
-            
-            return View();
-        }
-        //Erişim İzni Yok
-        public IActionResult Errors403()
-        {
-            Response.StatusCode = 403;
 
             return View();
         }
-        //Sunucu Hatası
-        public IActionResult Errors500()
-        {
-            Response.StatusCode = 500;
-
-            return View();
-        }
+      
+       
     }
 }
