@@ -3,6 +3,7 @@ using BusinessLayer.ValidationRules;
 using DataAccessLayer.EntityFramework;
 using EntityLayer;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,15 +12,17 @@ using System.Threading.Tasks;
 
 namespace MVCProjeKampıUI.Controllers
 {
+    [Authorize]
     public class AdminCategoryController : Controller
     {
         CategoryManager cm = new CategoryManager(new EFCategoryDAL());
+       
         public IActionResult Index()
         {
             var categoryValues = cm.GetList();
             return View(categoryValues);
         }
-
+ 
         public IActionResult AddCategory()
         {
             return View();

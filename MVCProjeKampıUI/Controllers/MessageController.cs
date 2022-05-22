@@ -3,6 +3,7 @@ using BusinessLayer.ValidationRules;
 using DataAccessLayer.EntityFramework;
 using EntityLayer;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -34,7 +35,7 @@ namespace MVCProjeKampıUI.Controllers
 
             return View(cm.GetById(id));
         }
-
+        [Authorize]
         public IActionResult NewMessage()
         {
             return View();
